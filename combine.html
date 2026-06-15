@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Converting Feet into Inches</h1>
+        <label for=>feet</label>
+        <input id="fet" type="text">
+        <br><br>
+      
+        <button onclick="change()"> click here for conversion</button>
+        <br>
+        <h1 id="op"></h1>
+    </div>
+    <script>
+        function change(){
+            let feet = parseInt(document.getElementById("fet").value)
+            let inch =feet*12
+            console.log(inch)
+            document.getElementById("op").innerHTML= + inch
+        }
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <label for=>dollar</label>
+        <input id="dol" type="text">
+        <br><br>
+        <h1>Converting $ into Rs</h1>
+        <br><br>
+        <button onclick="convert()"> click here for conversion</button>
+        <br>
+        <h1 id="out"></h1>
+    </div>
+    <script>
+        function convert(){
+            let dollar = parseInt(document.getElementById("dol").value);
+            let rs=dollar*95.25
+            console.log(rs)
+            document.getElementById("out").innerHTML= rs  + "RS"
+        }
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <label for=>num1</label>
+        <input id="num1" type="text">
+        <br><br>
+
+        <label for=>num2</label>
+        <input id="num2" type="text">
+        <br><br>
+
+        <button onclick="multiplication()"> click here for multiplication</button>
+        <br>
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="put">***</h1>
+
+    </div>
+    <script>
+        function multiplication(){
+            let num1= parseInt(document.getElementById("num1").value);
+            let num2= parseInt(document.getElementById("num2").value);
+            let multiplication= num1*num2; 
+            console.log(multiplication);
+            document.getElementById("put").innerHTML= "multiplication of two number is"+ multiplication; 
+        }
+        
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <label for=>Base</label>
+        <input id="base" type="text">
+        <br><br>
+
+        <label for=>Height</label>
+        <input id="height" type="text">
+        <br><br>
+
+        <button onclick="calculateAreat()"> click here for area</button>
+        <br>
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="t">***</h1>
+
+    </div>
+    <script>
+        function calculateAreat(){
+            let base= parseInt(document.getElementById("base").value);
+            let height= parseInt(document.getElementById("height").value);
+            let area= (1/2)*base*height; 
+            console.log(area);
+            document.getElementById("t").innerHTML= "Area of Triangle is="+ area; 
+        }
+        
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <h1>Area of Circle</h1>
+        <label for=>Radius</label>
+        <input id="rad" type="text">
+        <br><br>
+
+       
+        <button onclick="calculateAreac()"> Calculate Area of Circle</button>
+        <br>
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="c">***</h1>
+
+    </div>
+    <script>
+        function calculateAreac(){
+            let Radius= parseInt(document.getElementById("rad").value);
+            let area= Math.PI*Radius*Radius; 
+            console.log(area);
+            document.getElementById("c").innerHTML= "Area of Circle is="+ area; 
+        }
+    
+        
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <h1>Bytes to bits conversion</h1>
+        <label for=>byte</label>
+        <input id="Byte" type="text">
+        <br><br>
+        <h1>Converting Bytes into bits</h1>
+        <br><br>
+        <button onclick="conversion()"> click here for conversion</button>
+        <br>
+        <h1 id="b"></h1>
+    </div>
+    <script>
+        function conversion(){
+            let byte = parseInt(document.getElementById("Byte").value)
+            let bits =byte*8
+            console.log(bits)
+            document.getElementById("b").innerHTML= + bits +"bits"
+        }
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <h1>Area of Rectangle</h1>
+        <label for=>Length</label>
+        <input id="len" type="text">
+        <br><br>
+
+        <label for=>Breadth</label>
+        <input id="brd" type="text">
+        <br><br>
+
+        <button onclick="calculateArear()"> click here for Area of Rectangle</button>
+        <br>
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="r">***</h1>
+
+    </div>
+    <script>
+        function calculateArear(){
+            let length= parseInt(document.getElementById("len").value);
+            let breadth= parseInt(document.getElementById("brd").value);
+            let area= length*breadth; 
+            console.log(area);
+            document.getElementById("r").innerHTML= "Area of Rectangle="+ area; 
+        }
+        
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <h1>Area of Square</h1>
+        <label for=>Side</label>
+        <input id="sid" type="text">
+        
+        <br><br>
+        <button onclick="calculateAreas()"> click here for Area of Square</button>
+
+
+        <br>
+        <h1>Output</h1>
+        <h1 id="s">***</h1>
+        <br>
+    </div>
+         
+
+    <script>
+        function calculateAreas(){
+            let Side= parseInt(document.getElementById("sid").value);
+            let area= Side*Side; 
+            
+            console.log(area);
+            document.getElementById("s").innerHTML= "Area of Square ="+ area; 
+        }
+        
+    </script>
+    <hr><hr>
+    <div style="text-align: center;">
+        <label for=>English</label>
+        <input id="english" type="text">
+        <br><br>
+
+        <label for=>Hindi</label>
+        <input id="hindi" type="text">
+        <br><br>
+         <label for=>Marathi</label>
+        <input id="marathi" type="text">
+        <br><br>
+
+        <button onclick="calculatePercentage()"> click here for Percentage</button>
+        <br><br>
+         <button onclick="calculateTotal()">Click here for Total</button>
+         <br><br>
+
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="p">***</h1>
+
+    </div>
+    <script>
+        function calculatePercentage(){
+            let English= parseInt(document.getElementById("english").value);
+            let Hindi= parseInt(document.getElementById("hindi").value);
+            let Marathi= parseInt(document.getElementById("marathi").value);
+            let percentage= (English+Hindi+Marathi)/300*100; 
+            console.log(percentage);
+            document.getElementById("p").innerHTML= "Percentage of three subject ="+ percentage +"%"; 
+        }
+        function calculateTotal(){
+            let English= parseInt(document.getElementById("english").value);
+            let Hindi= parseInt(document.getElementById("hindi").value);
+            let Marathi= parseInt(document.getElementById("marathi").value);
+            let total= (English+Hindi+Marathi); 
+            console.log(total);
+            document.getElementById("p").innerHTML= "Total of three subject ="+ total; 
+        }
+        
+    </script>
+    
+</body>
+</html>

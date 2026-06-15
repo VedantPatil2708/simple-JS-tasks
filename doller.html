@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div style="text-align: center;">
+        <label for=>dollar</label>
+        <input id="dol" type="text">
+        <br><br>
+        <h1>Converting $ into Rs</h1>
+        <br><br>
+        <button onclick="conversion()"> click here for conversion</button>
+        <br>
+        <h1 id="op"></h1>
+    </div>
+    <script>
+        function conversion(){
+            let dollar = parseInt(document.getElementById("dol").value);
+            let rs=dollar*95.25
+            console.log(rs)
+            document.getElementById("op").innerHTML= rs  + "RS"
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div style="text-align: center;">
+
+       
+
+        <button onclick="si()"> click here for Simple Interest</button>
+        
+        <h1>Output</h1>
+        <br>
+        <h1 id="op"></h1>
+        <script>
+            function si(){
+                let p=parseInt(prompt("Enter Principal Amount"));
+                let r=parseInt(prompt("Enter Rate of Interest"));
+                let t=parseInt(prompt("Enter Time "));
+                let simpleInterest=(p*r*t)/100;
+                console.log(simpleInterest);
+                document.getElementById("op").innerHTML ="Simple Interest for Principal Amount"  +  p  +  "at rate of Interest of"  + r +   "%"   + "for Time period of"   + t +  "years is"  + simpleInterest;
+            }    
+
+
+        </script>
+    
+</body>
+</html>

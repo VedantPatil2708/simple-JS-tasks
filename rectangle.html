@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Area of Rectangle</h1>
+        <label for=>Length</label>
+        <input id="len" type="text">
+        <br><br>
+
+        <label for=>Breadth</label>
+        <input id="brd" type="text">
+        <br><br>
+
+        <button onclick="calculateArea()"> click here for Area of Rectangle</button>
+        <br>
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="op">***</h1>
+
+    </div>
+    <script>
+        function calculateArea(){
+            let length= parseInt(document.getElementById("len").value);
+            let breadth= parseInt(document.getElementById("brd").value);
+            let area= length*breadth; 
+            console.log(area);
+            document.getElementById("op").innerHTML= "Area of Rectangle="+ area; 
+        }
+        
+    </script>
+    
+</body>
+</html>

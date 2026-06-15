@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+
+        <label for="">num1</label>
+        <input id="num1" type="text">
+        <br><br>
+
+        <label for="">num2</label>
+        <input id="num2" type="text">
+        <br><br>
+
+        <button onclick="getvalue()"> click here for substraction</button>
+        
+        <h1>Output</h1>
+        <br>
+        <h1 id="op">******* </h1>
+        
+    </div>
+    <script>
+       
+        function getvalue(){
+
+            let a= parseInt(document.getElementById("num1").value);
+            let b= parseInt(document.getElementById("num2").value);
+            let sub= a-b 
+            console.log(sub)
+            document.getElementById("op").innerHTML= "Substraction of two numbers="+ sub
+            
+        }
+    </script>
+
+</body>
+
+</html>

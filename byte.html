@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div style="text-align: center;">
+        <h1>Bytes to bits conversion</h1>
+        <label for=>byte</label>
+        <input id="Byte" type="text">
+        <br><br>
+        <h1>Converting Bytes into bits</h1>
+        <br><br>
+        <button onclick="conversion()"> click here for conversion</button>
+        <br>
+        <h1 id="op"></h1>
+    </div>
+    <script>
+        function conversion(){
+            let byte = parseInt(document.getElementById("Byte").value)
+            let bits =byte*8
+            console.log(bits)
+            document.getElementById("op").innerHTML= + bits +"bits"
+        }
+    </script>
+    
+    
+</body>
+</html>

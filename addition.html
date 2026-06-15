@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       <div style="text-align: center;">
+
+       
+
+        <button onclick="getvalue()"> click here for addition</button>
+        
+        <h1>Output</h1>
+        <br>
+        <h1 id="op">******* </h1>
+        
+    </div>
+    <script>
+       
+        function getvalue(){
+
+            let a= parseInt(prompt("Enter num1"));
+            let b= parseInt(prompt("Enter num2"));
+            let sum= a + b;
+            console.log(sum);
+            document.getElementById("op").innerHTML ="Addition of" +a+ "and" +b+ "is" + sum;
+            
+            
+        }
+    </script>
+
+    
+</body>
+</html>

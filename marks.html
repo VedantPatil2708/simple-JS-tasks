@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <label for=>English</label>
+        <input id="english" type="text">
+        <br><br>
+
+        <label for=>Hindi</label>
+        <input id="hindi" type="text">
+        <br><br>
+         <label for=>Marathi</label>
+        <input id="marathi" type="text">
+        <br><br>
+
+        <button onclick="calculatePercentage()"> click here for Percentage</button>
+        <br><br>
+         <button onclick="calculateTotal()">Click here for Total</button>
+         <br><br>
+
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="op">***</h1>
+
+    </div>
+    <script>
+        function calculatePercentage(){
+            let English= parseInt(document.getElementById("english").value);
+            let Hindi= parseInt(document.getElementById("hindi").value);
+            let Marathi= parseInt(document.getElementById("marathi").value);
+            let percentage= (English+Hindi+Marathi)/300*100; 
+            console.log(percentage);
+            document.getElementById("op").innerHTML= "Percentage of three subject ="+ percentage +"%"; 
+        }
+        function calculateTotal(){
+            let English= parseInt(document.getElementById("english").value);
+            let Hindi= parseInt(document.getElementById("hindi").value);
+            let Marathi= parseInt(document.getElementById("marathi").value);
+            let total= (English+Hindi+Marathi); 
+            console.log(total);
+            document.getElementById("op").innerHTML= "Total of three subject ="+ total; 
+        }
+        
+    </script>
+</body>
+</html>

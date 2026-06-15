@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Area of Circle</h1>
+        <label for=>Radius</label>
+        <input id="rad" type="text">
+        <br><br>
+
+       
+        <button onclick="calculateArea()"> Calculate Area of Circle</button>
+        <br>
+        <h1>Output</h1>
+        <br>
+         
+        <h1 id="op">***</h1>
+
+    </div>
+    <script>
+        function calculateArea(){
+            let Radius= parseInt(document.getElementById("rad").value);
+            let area= Math.PI*Radius*Radius; 
+            console.log(area);
+            document.getElementById("op").innerHTML= "Area of Circle is="+ area; 
+        }
+    
+        
+    </script>
+    
+</body>
+</html>
